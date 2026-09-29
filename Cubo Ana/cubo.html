@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cubo 3D com Fotografias</title>
+
+  <!-- Ligação ao ficheiro CSS -->
+  <link rel="stylesheet" href="cubo.css">
+</head>
+
+<body>
+  <main>
+    <h1>Cubo 3D com Fotografias</h1>
+
+    <p>O cubo roda automaticamente para mostrar as fotografias.</p>
+
+    <!-- Cenário que cria o efeito de profundidade 3D -->
+    <div class="cenario" id="cenario">
+
+      <!-- Cubo -->
+      <div class="cubo" id="cubo">
+
+        <!-- Face da frente -->
+        <div class="face frente">
+          <img
+            src="pexels-kelly-34596275.jpg"
+            alt="Fotografia de uma rua vista de cima"
+          >
+        </div>
+
+        <!-- Face de trás -->
+        <div class="face tras">
+          <img
+            src="pexels-kelly-34088064.jpg"
+            alt="Fotografia de água e paisagem"
+          >
+        </div>
+
+        <!-- Face direita -->
+        <div class="face direita">
+          <img
+            src="pexels-kelly-34776325.jpg"
+            alt="Fotografia de uma floresta no outono"
+          >
+        </div>
+
+        <!-- Face esquerda -->
+        <div class="face esquerda">
+          <img
+            src="pexels-kelly-34776311 (1).jpg"
+            alt="Fotografia de uma cascata"
+          >
+        </div>
+
+        <!-- Face de cima -->
+        <div class="face cima">
+          <img
+            src="pexels-kelly-34776328.jpg"
+            alt="Fotografia de um vale"
+          >
+        </div>
+
+        <!-- Face de baixo -->
+        <div class="face baixo">
+          <img
+            src="pexels-kelly-34776311.jpg"
+            alt="Fotografia de uma cascata na floresta"
+          >
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Botões de controlo -->
+    <div class="controlo">
+      <button class="botoes" id="pausa">Pausar</button>
+
+      <button class="botoes" id="mais">
+        Aumentar perspetiva
+      </button>
+
+      <button class="botoes" id="menos">
+        Diminuir perspetiva
+      </button>
+
+      <button class="botoes" id="rapido">
+        Mais rápido
+      </button>
+
+      <button class="botoes" id="lento">
+        Mais lento
+      </button>
+
+      <button class="botoes" id="normal">
+        Velocidade normal
+      </button>
+
+      <button class="botoes" id="reset">
+        Reiniciar
+      </button>
+    </div>
+
+    <p class="legenda">
+      Podes usar “Pausar” para observares melhor uma das imagens.
+    </p>
+  </main>
+
+  <!-- Ligação ao ficheiro JavaScript -->
+  <script src="cubo.js"></script>
+</body>
+</html>
